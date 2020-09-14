@@ -1,0 +1,61 @@
+	
+
+
+G=GrafoCasuale(6,funzioni2,0.5);
+printf("STAMPO ARCHI\n");
+stampaArchi(G);
+/*printf("\nDFS\n");
+DFS(G);
+printf("\nBFS\n");
+BFS(G,0);
+
+printf("\nConverto adiacenza1\n");
+ConversioneAdiacenza(G,assegnaFunMatrice());
+printf("STAMPO ARCHI\n");
+stampaArchi(G);
+printf("\nDFS\n");
+DFS(G);
+printf("\nBFS\n");
+BFS(G,0);
+
+
+//inserisci vertice
+InserimentoVertice(G);
+
+printf("\nSTAMPO ARCHI\n");
+stampaArchi(G);
+
+
+//inserisci arco
+InserimentoArco(G,0,G->size-1,4);
+printf("\nSTAMPO ARCHI\n");
+stampaArchi(G);
+
+
+
+//elimina arco
+EliminazioneArco(G,0,G->size-1);
+printf("\nSTAMPO ARCHI\n");
+stampaArchi(G);
+
+
+
+//elimina vertice
+EliminazioneVertice(G,G->size-1);
+printf("\nSTAMPO ARCHI\n");
+stampaArchi(G);
+*/
+//creazione trasposto
+Gt = CreazioneTrasposto(G);
+printf("\nSTAMPO ARCHI trasposto\n");
+stampaArchi(Gt);
+
+//controlla se e aciclico
+printf("\nCONTROLLO SE CICLICO: ");
+if ( DFS_cicli(G) ) printf("\nGRAFO CICLICO\n"); else printf("\nGRAFO ACICLICO\n");
+
+printf("Percorso minimo da 0 a 1\n");
+PercorsoMinimo(G,0,1);
+printf("\nPercorso a cazzo da 0 a 1\n");
+PercorsoCasuale(G,0,1);
+printf("\n");
